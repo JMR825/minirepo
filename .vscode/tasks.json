@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "clean",
+        "type": "shell",
+        "command": "rm",
+        "args": ["${fileDirname}/${fileBasenameNoExtension}.exe"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "build and run",
+        "type": "shell",
+        "command": "C:/Users/admin/LLVM/bin/clang.exe",
+        "args": [
+          "C://Users//admin//LLVM//lib//clang//17//include",
+        "-Wno-deprecated-declarations",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}.exe"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "run",
+        "type": "shell",
+        "command": "${fileDirname}/${fileBasenameNoExtension}.exe"
+      }
+    ]
+  }
