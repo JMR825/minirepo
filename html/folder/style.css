@@ -1,0 +1,31 @@
+*{
+    margin:0%;
+    padding:0% ;
+    box-sizing: border-box;
+    background-color: rgb(17, 7, 7);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20cm;
+    background-color: black;
+}
+a{
+    display:inline-block;
+    padding: 25px 30px;
+    letter-spacing: 4px;
+    color:aquamarine;
+    overflow: hidden;
+    transition: .5s;
+}
+a:hover{
+    background-color:aqua ;
+    color:black;
+    box-shadow: 0 0 5px lightblue
+                0 0 25px rgb(0, 187, 255)
+                0 0 50px rgb(22, 162, 222)
+                0 0 200px rgb(22, 162, 222);
+    filter:hue-rotate(225deg);
+    background-color: linear gradient(transparent);
+}
