@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define inf 999
+
 int dijkstra(int c[][],int n,int s,int d[])
 {
     int min,v[],i,j,u;
