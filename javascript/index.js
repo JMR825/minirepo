@@ -6,4 +6,4 @@ this.carname=brand;
 
 }
 }
-mycar=new car("Ford");
+car=new car("Ford");
